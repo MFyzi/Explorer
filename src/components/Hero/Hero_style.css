@@ -1,0 +1,72 @@
+@import url('../../styles/costomStyle.css');
+
+.containers{
+    height: 30vw;
+    background: radial-gradient(rgb(111, 110, 110),black);
+    margin-top: 5rem;
+    padding-top: 10px;
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.slide{
+    position: absolute;
+    
+    animation: slider_change 1s linear ;
+}
+.hero_pic{
+    width: 60vw;
+}
+.arrow_btn{
+    color: aliceblue;
+    border: none;
+    font-size: 2rem;
+    padding: 5px;
+}
+.fa-angles-right{
+    position: absolute;
+    top: 40%;
+    right: 18%;
+}
+.fa-angles-left{
+    position: absolute;
+    top: 40%;
+    left: 15%;
+}
+
+.hero_detail{
+    left: 1rem;
+    font-size: 1rem;
+    position: relative;
+    top: -10rem;
+    width: 40%;
+}
+.detail{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.hero_detail_buttons{
+    display: flex;
+    gap: .5rem;
+}
+.hero_detail_buttons *{
+    padding: 5px 10px;
+    border: none;
+    color: white;
+}
+
+@media screen and (max-width:1043px){
+    .hero_pic{
+        width: 80vw;
+    }
+    .containers{
+        height: 40vw;
+    }
+}
+@keyframes slider_change {
+    0%{
+        transform: translateX(0);
+    }
+}

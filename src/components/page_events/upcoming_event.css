@@ -1,0 +1,52 @@
+@import "../../styles/costomStyle.css";
+
+.upcoming_events{
+    display: grid;
+    width: fit-content;
+    margin: auto;
+    grid-template-columns:repeat(2,1fr);
+    padding:  10px;
+    grid-gap: 16px;
+}
+.upcoming_event_video{
+    width: 035vw;
+    position: relative;
+    background-size: cover;
+    filter: contrast(.8);
+    transition:filter .5s ease;
+}
+.upcoming_event_video:hover{
+    filter: contrast(1);
+}
+video{
+    width: inherit;
+    height: inherit;
+}
+
+.event_video_mention{
+    color: white;
+    font-weight:100;
+    background:rgba(164, 151, 151, 0.8);
+    padding: 2px 4px;
+    position: absolute;
+    bottom: 15px;
+    right: 8px;
+}
+@media screen and (max-width : 940px ) {
+    .upcoming_events{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        margin: auto;
+    }
+    
+.upcoming_event_video{
+    width: 60vw;}
+}
+@media screen and (max-width : 543px){
+    .upcoming_event_video{
+        width: 100%;
+    }
+    
+}

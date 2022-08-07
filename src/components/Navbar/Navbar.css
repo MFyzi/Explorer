@@ -1,0 +1,83 @@
+@import '../../styles/costomStyle.css';
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    background-color: rgba(66, 66, 66, 0.5);
+    width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 20px 90px;
+}
+.navLi,.navActive{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.nav_element{
+  font-size: 1rem;
+}
+.hamburger{
+   font-size: 1.5rem;
+   display: none;
+   cursor: pointer;
+   transition:all .4s ease-in;
+}
+.hamburger:hover{
+    color: white;
+}
+.x{
+    display: none;
+}
+.bars{
+    display:contents;
+}
+.active-x{
+    display: block;
+}
+.active-bars{
+    display: none;
+}
+
+@media screen and (max-width : 940px) {
+
+.hamburger{
+   display: block;
+   position: absolute;
+   top:1rem ;
+   right: 4rem;
+   }
+  .navbar{
+    display: block;
+    height: fit-content;
+  }
+  .navLi{
+    display: none;
+  }
+  .navActive{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .bars-active{
+    display: none;
+  }
+  .x-active{
+    display: block;
+  }
+}
+@media screen and (max-width : 543px){
+    .navActive{
+        width: 100%;
+        margin-top: 20px;
+        flex-direction: column;
+        gap: .4rem;
+      }
+}

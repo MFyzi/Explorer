@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
+:root{
+    --primary_clr :rgba(254, 10, 6, 0.133) ;
+    --text_font : 'Inter', sans-serif;
+    --font_clr:#1cbfff00;
+}
+body{
+    background:linear-gradient(180deg, rgb(33, 4, 42) 0%, rgba(9,9,121,1) 55%, rgba(107, 169, 180, 0.7) 100%);
+    color: wheat;
+}
+*::after,*::before{
+    content: '';
+    position: absolute;
+}
+
+*{
+    font-family: var(--text_font);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-transform: uppercase;
+    color: wheat;
+    cursor: pointer;  
+    text-decoration: none;
+    
+}
+ul{
+    list-style: none;
+}
+button{
+    width: fit-content;
+    background: none;
+    cursor: pointer;
+}
