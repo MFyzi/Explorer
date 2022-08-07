@@ -39,7 +39,7 @@ function Hero() {
         {
         zIndex :n === middle ? n : n-2 ,
         transform:`${n<middle ? `translate(${-z*50}%,0) rotateX(30deg)`: n>middle ? `translate(${z*50}%,0) rotateX(-30deg)` : 'translate(0,0)'}`,
-        opacity:n === middle ? "1" : `${1-z*.3}` ,
+        opacity:n === middle ? "1" : `${1-z*.8}` ,
         transition: n===arraySlideNo[0] + n===arraySlideNo[totalSlide-1] ? "": "all 1s ease-in-out",
         }
       }

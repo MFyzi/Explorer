@@ -6,7 +6,7 @@ import './episode.css'
 function Episode() {
     const {fetch} = useFetch(6,'mountain','snow')
     const [sourse,setSourse]=useState('')
-    const [first, setfirst] = useState('')
+    // const [first, setfirst] = useState('')
     const videoRef = useRef('')
 
     const episodeSection = fetch.map((item,index)=>{

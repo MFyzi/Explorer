@@ -60,9 +60,21 @@
 @media screen and (max-width:1043px){
     .hero_pic{
         width: 80vw;
+        height: 38vw;
+    }
+    .hero_detail{
+        font-size: .8rem;
     }
     .containers{
-        height: 40vw;
+        height: 45vw;
+    }
+}
+@media screen and (max-width:720px){
+    .hero_pic{
+        width: 100vw;
+    }
+    .slide{
+        width: 100vw;
     }
 }
 @keyframes slider_change {
