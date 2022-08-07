@@ -2,17 +2,12 @@
 
 
 .episode_container{
-    /* padding-top: 20px; */
-    
     width: min-content;
     margin: auto;
     display: grid;
     grid-gap: 5px;
     grid-template-columns: repeat(3,auto);
 }
-/* .focusing_episode{
-    width: 720px;
-} */
 .focusing_episode_container{
     width: 50vw;
     grid-row: 1 / 4 ; 
@@ -41,10 +36,8 @@
 }
 .episodes_list_container{
     height: 8vw;
-    /* height:100px; */
     width: 35vw;
     overflow: hidden;
-    /* border: 2px solid black; */
     display: flex;
     align-items: center;
     gap: 5px;
@@ -91,7 +84,6 @@
 @media screen and (max-width :500px) {
     .focusing_episode{
         width: 98vw;
-        /* margin: 0 20px; */
     }
     .episodes_list_container{
         height:100px;

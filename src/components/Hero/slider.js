@@ -10,7 +10,7 @@ function Slider(props) {
       key={props.item.key}
       style={props.bgStyle}>
         <img className="hero_pic" 
-        src={props.item.image} alt="" 
+        src={props.item.image} alt="Slide_Picture" 
      s   />
     <div className="hero_detail">
             <div className="detail">
